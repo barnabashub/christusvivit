@@ -4,7 +4,7 @@ export default function ApiTest() {
   const [apiResponse, setApiResponse] = useState('');
 
   useEffect(() => {
-    fetch('http://your-api-domain.com/api')
+    fetch('https://barnabashub.pythonanywhere.com/api')
       .then(response => response.text())
       .then(data => {
         setApiResponse(data);
