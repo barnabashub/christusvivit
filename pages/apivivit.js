@@ -4,7 +4,7 @@ export default function ApiTest() {
   const [apiResponse, setApiResponse] = useState('');
   var name = "BarnabasHub";
   useEffect(() => {
-    fetch('https://barnabashub.pythonanywhere.com/api?name=${name}`')
+    fetch('https://barnabashub.pythonanywhere.com/api?name=BarnabasHub')
       .then(response => response.text())
       .then(data => {
         setApiResponse(data);
